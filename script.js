@@ -112,7 +112,7 @@ function startTest() {
 }
 
 startButton.addEventListener("click", () => {
-  /*if (!startTime) {
+  if (!startTime) {
     startTime = new Date();
     startButton.textContent = "Submit";
     startButton.disabled = true;
@@ -120,9 +120,7 @@ startButton.addEventListener("click", () => {
     startTest();
     startTime = null;
     startButton.textContent = "Start Again";
-  }*/
-
-
+  }
   renderNewQuote();
   startCountdownTimer();
   userInput.focus();
